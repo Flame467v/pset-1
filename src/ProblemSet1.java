@@ -65,15 +65,24 @@ public class ProblemSet1 {
         int test2 = 87;
         int test3 = 82;
 
-
-
+double homeworkconverter = 0.15;
+double quizconverter = 0.35;
+double testconverter = 0.50;
+double homeworktotal = ((double)homework1+(double)homework2+(double)homework3)/3;
+double quiztotal = ((double) quiz1+(double)quiz2+(double)quiz3)/3;
+double testtotal = ((double)test1+(double)test2+(double)test3)/3;
+double finalgrade = ((double)homeworktotal*(double)homeworkconverter)+((double)quiztotal*(double)quizconverter) + ((double)testtotal*(double)testconverter);
+System.out.printf("\n%,.2f%%.\n", finalgrade);
         /*
          * Exercise 5.
          *
          * I make $12.50/hour working as a cashier at a local supermarket. How much money
          * will I make this week?
          */
-
+double totalhours = 7.5+8+10.5+9.5+6+11.5;
+double hourlywage = 12.5;
+double finalwage = hourlywage*totalhours;
+         System.out.printf("\n$%,.2f.\n", finalwage);
 
 
         /*
