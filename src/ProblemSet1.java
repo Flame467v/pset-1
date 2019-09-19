@@ -24,8 +24,8 @@ public class ProblemSet1 {
         double lengthinches = 8.5;
         double widthinches = 11;
         double intomm = 25.4;
-        double finalcalc = intomm * widthinches * lengthinches;
-        System.out.println("\n%, .2f square millimeters.\n", finalcalc);
+        double finalcalc = intomm*intomm*(widthinches*lengthinches);
+        System.out.printf("\n%,.2f square millimeters.\n", finalcalc);
 
 
         /*
@@ -35,7 +35,7 @@ public class ProblemSet1 {
          */
          double intocm = 2.54;
          double finalcalctwo = (lengthinches+widthinches)*2*intocm;
-         System.out.println("\n%, .2f centimeters.\n", finalcalctwo);
+         System.out.printf("\n%,.2f centimeters.\n", finalcalctwo);
 
 
         /*
@@ -44,8 +44,8 @@ public class ProblemSet1 {
          * What is the length of the diagonal (in inches) between two corners on an 8.5-
          * by-11-inch sheet of paper?
          */
-        double lengthdiag = ((lengthinches^2) + (widthinches^2))^(1/2);
-        System.out.println("\n%, .2f inches.\n", lengthdiag);
+        double lengthdiag = Math.sqrt((lengthinches*lengthinches)+(widthinches*widthinches));
+        System.out.printf("\n%,.2f inches.\n", lengthdiag);
 
 
         /*
